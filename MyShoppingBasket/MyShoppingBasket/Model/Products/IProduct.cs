@@ -1,7 +1,7 @@
 ﻿namespace MyShoppingBasket.Model.Products
 {
-    interface IProduct
+    public interface IProduct
     {
-        Money GetPrice();
+        Money GetPricePerUnit();
     }
 }

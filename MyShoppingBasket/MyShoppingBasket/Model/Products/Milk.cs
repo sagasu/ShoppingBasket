@@ -2,7 +2,7 @@
 {
     public class Milk : IProduct
     {
-        public Money GetPrice()
+        public Money GetPricePerUnit()
         {
             return new Money(1.15M);
         }

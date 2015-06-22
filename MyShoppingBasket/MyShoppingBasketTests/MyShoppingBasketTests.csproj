@@ -42,6 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\BasketTests.cs" />
+    <Compile Include="Model\BasketScenarioTests.cs" />
+    <Compile Include="Model\Discounts\ThreeMilkDiscountTests.cs" />
+    <Compile Include="Model\Discounts\TwoButterDiscountTests.cs" />
     <Compile Include="Model\MoneyTests.cs" />
     <Compile Include="Model\Products\ProductTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

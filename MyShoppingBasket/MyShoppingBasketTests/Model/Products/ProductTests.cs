@@ -11,7 +11,7 @@ namespace MyShoppingBasketTests.Model.Products
         {
             var bread = new Bread();
 
-            Assert.NotNull(bread.GetPrice());
+            Assert.NotNull(bread.GetPricePerUnit());
         }
 
         [Test]
@@ -19,7 +19,7 @@ namespace MyShoppingBasketTests.Model.Products
         {
             var milk = new Milk();
 
-            Assert.NotNull(milk.GetPrice());
+            Assert.NotNull(milk.GetPricePerUnit());
         }
 
         [Test]
@@ -27,7 +27,7 @@ namespace MyShoppingBasketTests.Model.Products
         {
             var butter = new Butter();
 
-            Assert.NotNull(butter.GetPrice());
+            Assert.NotNull(butter.GetPricePerUnit());
         }
     }
 }
