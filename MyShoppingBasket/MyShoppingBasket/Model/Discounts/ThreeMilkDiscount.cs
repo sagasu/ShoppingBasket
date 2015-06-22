@@ -11,7 +11,7 @@ namespace MyShoppingBasket.Model.Discounts
         {
             var nrOfMilk = products.Count(_ => typeof (Milk) == _.GetType());
             var nrOfFreeMilk = Math.Abs(nrOfMilk/4);
-            return new Milk().GetPricePerUnit() * new Money(nrOfFreeMilk);
+            return Milk.Price * new Money(nrOfFreeMilk);
         }
     }
 }

@@ -14,13 +14,9 @@ namespace MyShoppingBasket.Model.Discounts
 
             var nrOfButterPairs = Math.Abs(nrOfButter / 2);
 
-            decimal discount = 0;
-            var breadPrice = new Bread().GetPricePerUnit().Amount;
-            foreach(var i in Enumerable.Range(0, Math.Min(nrOfButterPairs, nrOfBread)))
-            {
-                discount += breadPrice/2;
-            }
-            
+            var breadPrice = Bread.Price.Amount;
+            var discount = Enumerable.Range(0, Math.Min(nrOfButterPairs, nrOfBread)).Sum(i => breadPrice/2);
+
             return new Money(discount);
         }
     }

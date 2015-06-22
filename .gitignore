@@ -63,10 +63,13 @@ local.properties
 .builds
 *.dotCover
 
-## TODO: If you have NuGet Package Restore enabled, uncomment this
+#NuGet
 packages/
-/packages/
-!packages/repositories.config
+*.nupkg
+
+#ncrunch
+*ncrunch*
+*crunch*.local.xml
 
 # Visual C++ cache files
 ipch/

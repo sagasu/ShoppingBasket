@@ -2,9 +2,11 @@
 {
     public class Milk : IProduct
     {
+        public static Money Price = new Money(1.15M);
+
         public Money GetPricePerUnit()
         {
-            return new Money(1.15M);
+            return Price;
         }
     }
 }

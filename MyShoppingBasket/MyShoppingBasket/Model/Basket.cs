@@ -7,8 +7,8 @@ namespace MyShoppingBasket.Model
 {
     public class Basket
     {
-        private static IList<IProduct> _productStore = new List<IProduct>();
-        private static IList<IDiscount>  _discounts = new List<IDiscount>{new ThreeMilkDiscount(), new TwoButterDiscount()};
+        private IList<IProduct> _productStore = new List<IProduct>();
+        private IList<IDiscount>  _discounts = new List<IDiscount>{new ThreeMilkDiscount(), new TwoButterDiscount()};
 
         public void Add(IProduct product)
         {
